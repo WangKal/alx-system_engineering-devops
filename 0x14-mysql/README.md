@@ -1,0 +1,1 @@
+mysl installation in ubuntu
