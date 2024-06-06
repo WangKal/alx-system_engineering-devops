@@ -5,9 +5,12 @@ import requests
 
 
 def top_ten(subreddit):
-    """Prints the titles of the first 10 hot posts listed for a given subreddit.
+    """Queries the Reddit API and prints the titles of the first 10 hot
+    posts listed for a given subreddit.
 
-    If not valid print None.
+    If not a valid subreddit, print None.
+    Invalid subreddits may return a redirect to search results. Ensure
+    that you are not following redirects.
 
     Args:
         subreddit (str): subreddit
